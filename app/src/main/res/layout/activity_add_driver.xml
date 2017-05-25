@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dvn.vindecoder.ui.seller.AddDriverActivity">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        layout="@layout/layout_toolbar"
+        android:layout_alignParentTop="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/login_btn"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:id="@+id/linearLayout2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                >
+                <!--     <android.support.design.widget.TextInputLayout
+                         android:id="@+id/usernameWrapper"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textColorHint="#C4C4C4">
+         -->
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:singleLine="true">
+
+                </EditText>
+                <!--    </android.support.design.widget.TextInputLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                >
+                <!--      <android.support.design.widget.TextInputLayout
+                        android:id="@+id/userLastnameWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#C4C4C4">-->
+
+                <EditText
+                    android:id="@+id/etUserLastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:singleLine="true">
+
+                </EditText>
+                <!--  </android.support.design.widget.TextInputLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+                <!--     <android.support.design.widget.TextInputLayout
+                       android:id="@+id/useremailWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColorHint="#C4C4C4">-->
+
+                <EditText
+                    android:id="@+id/etEmailname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_email_id"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:singleLine="true">
+
+                </EditText>
+                <!--     </android.support.design.widget.TextInputLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                >
+                <!--     <android.support.design.widget.TextInputLayout
+                       android:id="@+id/userphoneWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColorHint="#C4C4C4">-->
+
+                <EditText
+                    android:id="@+id/etphonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:singleLine="true">
+
+                </EditText>
+                <!--    </android.support.design.widget.TextInputLayout>-->
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+                <!--     <android.support.design.widget.TextInputLayout
+                       android:id="@+id/userphoneWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColorHint="#C4C4C4">-->
+
+                <EditText
+                    android:id="@+id/etcontactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contact_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:singleLine="true">
+
+                </EditText>
+                <!--    </android.support.design.widget.TextInputLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/img_view_drivingLicense"
+                    android:src="@drawable/license"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Driving License"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/img_view_drivingLicense"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/insurance_plate_img_view"
+                    android:src="@drawable/license"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Insurance Plate"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/insurance_plate_img_view"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/passport_imageView"
+                    android:src="@drawable/passport"
+
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Passport"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/passport_imageView"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+
+                <!--          <android.support.design.widget.TextInputLayout
+                            android:id="@+id/passwordWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#C4C4C4">-->
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:padding="8dp" />
+                <!--     </android.support.design.widget.TextInputLayout>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_marginTop="10dp"
+                >
+
+                <!--     <android.support.design.widget.TextInputLayout
+                       android:id="@+id/c_passwordWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColorHint="#C4C4C4">-->
+
+                <EditText
+                    android:id="@+id/etCPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_conf_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/button_color_edit_text"
+                    android:background="@color/white_color"
+                    android:padding="8dp" />
+                <!--      </android.support.design.widget.TextInputLayout>-->
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_btn"
+        android:id="@+id/login_btn"
+        android:layout_margin="10dp"
+        android:background="@color/button_background_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>

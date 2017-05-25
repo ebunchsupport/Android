@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0095A3</color><!--App Time color-->
+    <color name="colorPrimaryDark">#02ADC1</color><!--App Time color-->
+    <color name="colorAccent">#0099cc</color><!--#0099cc-->
+    <color name="color_toolbar">#02ADC1</color>
+    <color name="color_toolbar1">#3daff0</color>
+
+    <color name="color_gray">#757575</color>
+    <color name="light_gray">#C8C6C7</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_background">#303030</color>
+    <color name="list_item_title">#fff</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="light_backgroun_vivid_tangerian">#fffe998f</color>
+    <color name="header_color">#009999</color>
+    <color name="button_color">#05ADC0</color>
+    <color name="image_back_color">#04669e</color>
+    <color name="scanner_back_color">#0e0601</color>
+    <color name="scanner_color">#462611</color>
+
+
+    <color name="txt_hint">#C4C4C4</color>
+    <color name="back_color_hint">#CCC4C4C4</color>
+    <color name="txt_color">#B3B3BB</color>
+    <color name="BLACK">#000000</color>
+    <color name="drop_don_clr">#05ab9a</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="back_dark_blue">#04669e</color>
+    <color name="light_blue">#3daef0</color>
+    <color name="slider_header_color">#011f30</color>
+
+    <color name="gray">#eeeeee</color>
+
+    <color name="Blue_Main_Color">#0072bc</color>
+    <color name="Grey_Clouds">#ecf0f1</color>
+    <color name="GREY">#777777</color>
+    <color name="white_light">#eeeeee</color>
+    <color name="gray_light">#999999</color>
+    <color name="yellow">#ffb400</color>
+
+    <color name="Purple_Dark">#770952</color>
+    <color name="Puple_Light">#FBE2F0</color>
+    <color name="GREEN">#397471</color>
+    <color name="RED">#e74c3c</color>
+    <color name="signup_txt_color">#0099cc</color>
+    <color name="COLOR_TEXT_HEADING">#212121</color>
+    <color name="COlOR_TOP_HEADING_BAR">#D32F2F</color>
+    <color name="COLOR_HEADER">#F44336</color>
+    <color name="COLOR_BUTTON">#FF9800</color>
+    <color name="COLOR_BAKCGROUND">#FFFFFF</color>
+    <color name="COLOR_TEXT_OTHER">#727272</color>
+
+    <color name="color_A">#cd203b</color>
+    <color name="color_B">#2a4b80</color>
+    <color name="color_C">#2a8b55</color>
+    <color name="color_D">#60bad4</color>
+    <color name="color_E">#a4328f</color>
+    <color name="color_F">#e19144</color>
+    <color name="color_G">#929f95</color>
+    <color name="color_H">#78463c</color>
+    <color name="color_I">#db8493</color>
+    <color name="color_J">#dcc237</color>
+    <color name="color_K">#bf9b79</color>
+    <color name="color_L">#c9a9c8</color>
+    <color name="color_M">#6db25f</color>
+    <color name="color_N">#cd203b</color>
+    <color name="color_O">#2a4b80</color>
+    <color name="color_P">#2a8b55</color>
+    <color name="color_Q">#60bad4</color>
+    <color name="color_R">#a4328f</color>
+    <color name="color_S">#e19144</color>
+    <color name="color_T">#929f95</color>
+    <color name="color_U">#78463c</color>
+    <color name="color_V">#db8493</color>
+    <color name="color_W">#dcc237</color>
+    <color name="color_X">#c9a9c8</color>
+    <color name="color_Y">#6db25f</color>
+    <color name="color_Z">#bf9b79</color>
+    <color name="white_color">#ffffff</color>
+    <color name="black_white_color">#f5f5f5</color>
+    <color name="backgroun_color_light_red">#FF9891</color>
+    <color name="button_color_moderate_red">#BE3636</color>
+    <color name="text_color_green">#ff01ff99</color>
+    <color name="background_blue">#ff2466eb</color>
+    <color name="button_color_flush_mahogany">#ffbf3637</color>
+    <color name="button_color_flush_mahogany_1">#bf3637</color>
+    <color name="button_color_dark_cyan">#064940</color>
+    <color name="background_color_moderate_cyan">#4AD59A</color>
+    <color name="background_color_bright_red">#F44437</color>
+    <color name="button_vivid_red">#FD5822</color>
+
+    <color name="button_color_edit_text">#727272</color>
+
+    <color name="background_login_color">#003333</color>
+    <color name="button_background_color">#05ADC0</color>
+    <color name="button_background_login_color">#00597e</color>
+    <color name="fb_bg_color">#336699</color>
+    <color name="colorFAB1">#c9a9c8</color>
+
+    <color name="spinner_base_color">#44000000</color>
+    <color name="colorFAB2">#E040FB</color>
+
+    <color name="edit_txt_color">#878787</color>
+    <color name="txt_view_color">#B3B3BB</color>
+    <color name="light_line_image">#41B3B3BB</color>
+
+    <color name="screen_back_ground">#EDEBEC</color>
+    <color name="msg_box_color">#85edebec</color>
+    <color name="msg_box_screen_color">#aa000000</color>
+    <color name="Yellow_color">#FFC300</color>
+    <color name="green_color">#FF339F42</color>
+    <color name="transparent_color">#00E74C3C</color>
+</resources>

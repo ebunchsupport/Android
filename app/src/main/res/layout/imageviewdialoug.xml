@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_backgound"
+        android:id="@+id/img_conatiner"
+        android:layout_marginTop="23dp"
+        >
+        <com.dvn.vindecoder.util.GestureImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/all_img_container"
+            android:layout_centerInParent="true"
+            android:background="#00ffffff"
+            />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_image_Large"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:text="X"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:elevation="7dp"
+            android:textSize="22dp"
+            android:visibility="gone"
+            android:textColor="@color/BLACK"
+            android:id="@+id/textView14" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/clost_img_btn"
+        android:src="@drawable/close_sign"
+        android:background="@drawable/close_red_circle"
+        />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_user"
+            android:textColor="@color/WHITE"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Add User" />
+        </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_un_assigned_car"
+            android:textColor="@color/WHITE"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Assign car to user" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/user"
+            android:icon="@drawable/services"
+            android:title="Users Detail"
+
+            />
+        </group>
+    <group android:checkableBehavior="single"
+        android:visible="false"
+        android:id="@+id/share_fb_group"
+        >
+        <item
+            android:id="@+id/share_fb_item"
+            android:icon="@drawable/ic_contact"
+            android:title="Share Details on FB" />
+        </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/shareBtn"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/title_section3" />
+       </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/rateBtn"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="@string/title_section4" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/aboutBtn"
+            android:icon="@drawable/about"
+            android:title="About Us" />
+        </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+    <!--
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>
+    -->
+</menu>

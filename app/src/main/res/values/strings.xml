@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Quick Cross</string>
+    <string name="action_title">Quick Cross</string>
+    <string name="dont_have_ac">Don\'t have a account?</string>
+    <string name="text_login">Login</string>
+    <string name="username">Email/Phone Number</string>
+    <string name="password">Password</string>
+    <string name="prince">Prince</string>
+    <string name="princess">Princess</string>
+    <string name="new_user">NewUser?</string>
+    <string name="sign_up">SignUp Now</string>
+    <string name="login">Login</string>
+    <string name="sign_up_now">Sign up Now</string>
+    <string name="add_children">Add Children</string>
+    <string name="submit">Submit</string>
+    <string name="submit1">Finish</string>
+    <string name="name">Name</string>
+    <string name="fb_login">FACEBOOK LOGIN</string>
+    <string name="email">Email</string>
+    <string name="dateOfBirth">Date of Birth(dd/mm/yyyy)</string>
+    <string name="phone_number">Land Line Number</string>
+    <string name="contact_number">Mobile Number</string>
+    <string name="_number">Number</string>
+    <string name="_fax">Fax</string>
+    <string name="_address">Address</string>
+    <string name="text_help">Dear user you can use two option in camera first one is manual verification and second is automated verification </string>
+    <string name="_gst">GST/Tax ID</string>
+    <string name="school_name">School Name(optional)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="pincode">Pincode/Locality</string>
+    <string name="terms_cond"> <u>Terms of Use</u></string>
+    <string name="generic_server_down">Server Down. Try after some time.</string>
+    <string name="no_internet">Internet Not available</string>
+    <string name="generic_error">Some error occurred try again later</string>
+    <string name="username_empty">Username Can\'t be empty</string>
+    <string name="date_of_birth_empty">Date of Birth Can\'t be empty</string>
+    <string name="email_empty">Email Can\'t be empty</string>
+    <string name="phone_number_empty">Phone Number Can\'t be empty</string>
+    <string name="password_empty">Password Can\'t be empty</string>
+    <string name="confirm_password_empty">Confirm Password Can\'t be empty</string>
+    <string name="pinCode_empty">Pincode Can\'t be empty</string>
+    <string name="password_mismatch">Password and Confirm Password doesn\'t match</string>
+    <string name="profile">Profile</string>
+    <string name="services">Services</string>
+    <string name="contacted">Contacted</string>
+    <string name="logout">Logout</string>
+    <!--<string name="facebook_app_id">468236026702543</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_location_city">LocationCity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="signup">Signup</string>
+
+    <string name="please_wait">Please Wait</string>
+
+    <string name="please_login">Please Login</string>
+    <string name="enter_email">Enter Email Id</string>
+    <string name="enter_password">Password</string>
+    <string name="enter_conf_password">Confirm Pass</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="build_your_profile">Build your Profile</string>
+    <string name="monile_no">Phone No*</string>
+    <string name="done">Done</string>
+    <string name="location_pincode">Location/Pincode</string>
+    <string name="location_or_pincode">Location,Pincode</string>
+    <string name="enter_email_id">Email</string>
+    <string name="seller_number">Seller Number</string>
+    <string name="forgot_possword">Forgot Password</string>
+    <string name="login1">Login</string>
+    <string name="map_head">Map &amp; Directions</string>
+    <string name="title_section3">Share this App</string>
+    <string name="title_section4">Rate the App</string>
+    <string name="fisrt_name">First Name</string>
+    <string name="_name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="next_btn">Next</string>
+    <string name="scan">Scan</string>
+    <string name="scan_bar_code">Scan a Bar Code</string>
+    <string name="title_activity_transporter_detail">Transporter_detail</string>
+
+    <string name="exporter_name">Exporter / Seller : </string>
+    <string name="spinner_title">Buyer</string>
+    <string name="spinner_show_example">Example Photos Display ?</string>
+    <string name="Vin_Starts_With">Vin \# Starts With</string>
+    <string name="Is_Vehicle_Recall_Free">Is Vehicle Recall Free</string>
+    <string name="IS_TIRE_LABEL_MISSING_DAMAGED">IS TIRE LABEL MISSING / DAMAGED</string>
+    <string name="Is_Manufactures_Label_Missing">Is Manufactures\n Label Missing/Damaged</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="text_recall_doc">VEHICLE INFORMATION</string>
+    <string name="text_manufatures_label">VEHICLE WEIGHT</string>
+    <string name="text_open_hood_realese_epa_lable">TIRES</string>
+    <string name="text_epa_lable">EPA</string>
+    <string name="text_speedo_lable">SPEEDO</string>
+    <string name="text_speeddisplay_lable">Speed Display</string>
+    <string name="text_inside_lable">INSIDE PHOTO AND OUTHER INFORMATION</string>
+    <string name="text_vehicele_speed_info">VEHICLE SPEED INFO</string>
+
+    <string name="save_and_next">Save and next</string>
+
+
+
+    <string name="car_in_process">Proceed</string>
+    <string name="car_assign">Assigned</string>
+    <string name="car_unassign">Unassigned</string>
+    <string name="car_complete">Completed</string>
+    <string name="car_reject">Rejected</string>
+    <string name="error_name">No data found at this moment</string>
+</resources>

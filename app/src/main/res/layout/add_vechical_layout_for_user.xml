@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layout_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtit_text_back_new"
+            android:orientation="vertical"
+            android:layout_margin="5sp">
+
+            <LinearLayout
+                android:id="@+id/layout_recall_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_vehicle_info_left"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_vehicle"
+                   />
+
+                <TextView
+                    android:id="@+id/text_vehicle_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/text_recall_doc"
+                    android:textColor="@color/image_back_color"
+                    android:drawable="@color/color_gray"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:id="@+id/img_vehicle_info_right"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:tint="@color/GREY"
+                  />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/neste_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/linear_nest_first_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="center|left"
+                                android:paddingRight="10sp"
+                                android:paddingTop="10sp"
+                                android:paddingBottom="10sp"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingRight="10sp"
+                                    android:paddingTop="10sp"
+                                    android:textSize="15sp"
+                                    android:paddingBottom="10sp"
+                                    android:text="Is Vehicle Recall Free"
+                                    android:textColor="@color/color_gray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_btn_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YES"
+
+                                        />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_btn_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="NO" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="center|left"
+                                android:paddingRight="10sp"
+                                android:paddingTop="10sp"
+                                android:paddingBottom="10sp"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="10sp"
+                                    android:paddingTop="10sp"
+                                    android:textSize="15sp"
+                                    android:paddingBottom="10sp"
+                                    android:text="@string/Is_Manufactures_Label_Missing"
+                                    android:textColor="@color/color_gray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_btn_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YES"
+
+                                        />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_btn_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="NO" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_scan_vin"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Scan Vin" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                              >
+
+                                <Spinner
+                                    android:id="@+id/spinner_vin_satrt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35sp"
+                                    android:hint="Scan Vin"
+                                  />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:background="@color/color_gray"></View>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_txt_make"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Make" />
+
+                            <EditText
+                                android:id="@+id/edit_txt_year"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:hint="Year" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_txt_model"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Model" />
+
+                            <EditText
+                                android:id="@+id/edit_txt_v_type"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Vehicle Type" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                               >
+
+                                <Spinner
+                                    android:id="@+id/spinner_buyer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35sp"
+                                    android:hint="Buyer" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:background="@color/color_gray"></View>
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/edit_txt_selling_price"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="US Selling Prices" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table_copy_of_recall_doc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:visibility="visible"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Copy of Recall Doc"
+                                android:textColor="@color/color_gray" />
+
+                            <ImageView
+                                android:id="@+id/image_copy_of_recall_doc"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@color/gray"
+                                android:padding="10sp"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Upload Manufacture Lable"
+                                android:textColor="@color/color_gray" />
+
+                            <ImageView
+                                android:id="@+id/image_upload_carimage"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Upload Copy of Registration"
+                                android:textColor="@color/color_gray" />
+
+                            <ImageView
+                                android:id="@+id/image_upload_copy_of_registration"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Upload Copy of Bill"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_copy_of_bill_salle"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/btn_save_recall_doc_for_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/image_back_color"
+                        android:padding="10sp"
+                        android:text="SAVE AND COUNTINUE"
+                        android:textColor="@color/WHITE"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_manufacture_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/edtit_text_back_new"
+            android:orientation="vertical"
+           >
+            <LinearLayout
+                android:id="@+id/layout_vehicle_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_vehicle_weight_left"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_vehicle_weight"
+                    />
+
+                <TextView
+                    android:id="@+id/text_vehicle_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="1"
+                    android:drawable="@color/color_gray"
+                    android:gravity="left|center"
+                    android:text="@string/text_manufatures_label"
+                    android:textColor="@color/image_back_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_vehicle_weight_right"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:tint="@color/GREY"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/neste_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linear_neste_second_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingRight="10sp"
+                                android:paddingTop="10sp"
+                                android:paddingBottom="10sp"
+                                >
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="10sp"
+                                    android:paddingRight="10sp"
+                                    android:paddingTop="10sp"
+                                    android:text="Weight on\n Manufactures Lable"
+                                    android:textColor="@color/color_gray"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_vichel_lbs"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="LB and KG" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_vichel_kgs"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="KG" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+
+                            <EditText
+                                android:id="@+id/edit_lbs_gvwr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:visibility="gone"
+                                android:hint="GVWR Enter in lbs only" />
+
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table_row_gvwr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_gvwr_7200_lb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:hint="GVWR 7200 LB"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:visibility="visible" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_front_gawr_3900_lb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="FRONT GAWR 3900 LB" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+
+                            <EditText
+                                android:id="@+id/edit_rear_gwar_3850_lb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:hint="Rear GAWR 3850 LB" />
+
+
+                        </TableRow>
+
+
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/btn_save_vehcle_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/image_back_color"
+                        android:padding="10sp"
+                        android:text="SAVE AND COUNTINUE"
+                        android:textColor="@color/WHITE"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_open_hood_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/edtit_text_back_new"
+            android:orientation="vertical"
+          >
+            <LinearLayout
+                android:id="@+id/layout_tires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_tires_left"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_tire"
+                    />
+
+                <TextView
+                    android:id="@+id/text_tires"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="1"
+                    android:drawable="@color/color_gray"
+                    android:gravity="left|center"
+                    android:text="@string/text_open_hood_realese_epa_lable"
+                    android:textColor="@color/image_back_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_tires_right"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:tint="@color/GREY"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/neste_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linear_neste_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:text="Is Tire Lable Missing or Damaged"
+                                android:textColor="@color/color_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+android:id="@+id/tire_radio_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YES" />
+
+                                    <RadioButton
+                                        android:id="@+id/tire_radio_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="NO" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo of Tire Lable"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_tire_lable"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_front_tire_size"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Front Tire Size" />
+
+                            <EditText
+                                android:id="@+id/edit_rim_size"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Front Rim Size 17"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_front_tire_presser"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Front tire Pressure" />
+
+                            <EditText
+                                android:id="@+id/edit_rear_tire_size"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:hint="Rear tire Size" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edit_rear_rim_size"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="@color/color_gray"
+                                android:hint="Rear Rim Size" />
+
+                            <EditText
+                                android:id="@+id/edit_rear_tire_pressure"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:hint="Rear Tire Pressure" />
+                        </TableRow>
+
+
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/btn_tire_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/image_back_color"
+                        android:padding="10sp"
+                        android:text="SAVE AND COUNTINUE"
+                        android:textColor="@color/WHITE"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_vichel_speed_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/edtit_text_back_new"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_epa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_epa_left"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_epa"
+                    />
+                <TextView
+                    android:id="@+id/text_epa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/text_epa_lable"
+                    android:textColor="@color/image_back_color"
+                    android:drawable="@color/color_gray"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:id="@+id/img_epa_right"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:tint="@color/GREY"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/neste_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout_epa_nested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:text="Is Epa Sticker Missing or Damaged"
+                                android:textColor="@color/color_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+android:id="@+id/radio_epa_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YES" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_epa_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="NO" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table_epa_photo_driver_side_vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo of Frontnd Driver Side of Vehicle "
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_epa_front_driver_side"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+
+
+
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/btn_epa_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/image_back_color"
+                        android:padding="10sp"
+                        android:text="SAVE AND COUNTINUE"
+                        android:textColor="@color/WHITE"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_inside_photo_and_outher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/edtit_text_back_new"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_inside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_inside_left"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_photo"
+                    />
+
+                <TextView
+                    android:id="@+id/text_inside"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="1"
+                    android:drawable="@color/color_gray"
+                    android:gravity="left|center"
+                    android:text="@string/text_inside_lable"
+                    android:textColor="@color/image_back_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_inside_right"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:tint="@color/GREY"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/inside_fifth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout_nested_inside"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:text="Vin Plate Missing or Not Matching"
+                                android:textColor="@color/color_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+android:id="@+id/radio_inside_vin_plate_missing_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YES" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_inside_vin_plate_missing_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="NO" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:text="Emisssion And Exhaust All Stock"
+                                android:textColor="@color/color_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10sp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_inside_emmission_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YES" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_inside_emmission_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="NO" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo Of Manufacture Label"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_manufacture_label"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo of VIN plate"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_vin_plate"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo Of Rear And Passanger Side of Vehicle"
+                                android:textColor="@color/color_gray" />
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_rear_passanger_cehicle"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo Of Passanger Seat Belt"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_seat_belt"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo Of Passanger Side Air Bag"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_Passanger_side_air_bag"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo Of Driver Seat Belt"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_driver_seat_belt"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="180sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:padding="10sp"
+                                android:text="Photo Of Driver Air Bag"
+                                android:textColor="@color/color_gray"/>
+
+                            <ImageView
+                                android:id="@+id/image_photo_of_driver_air_bag"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_weight="1"
+                                android:padding="10sp"
+                                android:background="@color/gray"
+                                android:src="@mipmap/add_camera" />
+                        </TableRow>
+
+
+
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/btn_inside_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/image_back_color"
+                        android:padding="10sp"
+                        android:text="SAVE AND COUNTINUE"
+                        android:textColor="@color/WHITE"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_speedo_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/edtit_text_back_new"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_speedo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_speedo_left"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_speedo"
+                    />
+
+                <TextView
+                    android:id="@+id/text_speedo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="1"
+                    android:drawable="@color/color_gray"
+                    android:gravity="left|center"
+                    android:text="@string/text_speedo_lable"
+                    android:textColor="@color/image_back_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_speedo_right"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:padding="3sp"
+                    android:layout_weight=".5"
+                    android:tint="@color/GREY"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/speedo_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout_speedo_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       >
+
+                        <TextView
+                            android:layout_width="120sp"
+                            android:layout_height="wrap_content"
+                            android:padding="10sp"
+                            android:gravity="center"
+                            android:text="@string/text_speeddisplay_lable"
+                            android:textColor="@color/color_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10sp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_speedo_km"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="KM" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_speedo_miles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:text="MILS" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                           >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                             android:padding="10sp"
+                                android:text="Do You Need Speedo Converted"
+                                android:textColor="@color/color_gray" />
+
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                          >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10sp"
+                                android:paddingTop="10sp"
+
+                                >
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_km_to_miles_yes"
+                                        android:layout_width="100sp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Yes KM to MILES"
+                                        android:gravity="center"/>
+
+                                    <RadioButton
+                                        android:id="@+id/radio_km_to_miles_no"
+                                        android:layout_width="100sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:text="No Already in Miles"
+                                        android:gravity="center"/>
+                                    <RadioButton
+                                        android:id="@+id/radio_no_need_km_sticker"
+                                        android:layout_width="100sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:gravity="center"
+                                        android:text="No Need KM Sticker" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:weightSum="1">
+
+                            <EditText
+                                android:id="@+id/edit_km_on_vehicle_speedo"
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/color_gray"
+                                android:textSize="15sp"
+                                android:hint="Km on Vehicle" />
+                        </TableRow>
+                    </TableLayout>
+                    <TextView
+                        android:id="@+id/btn_speedo_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="10sp"
+                        android:background="@color/image_back_color"
+                        android:padding="10sp"
+                        android:text="SAVE"
+                        android:gravity="center"
+                        android:textColor="@color/WHITE"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

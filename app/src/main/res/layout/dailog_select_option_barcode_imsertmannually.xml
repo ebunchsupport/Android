@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20sp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/clost_img_btn"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/image_back_color"
+                android:text="Get car details from Bar Code"
+                android:textColor="@color/WHITE"
+                android:id="@+id/bar_code_btn" />
+            <Button
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/image_back_color"
+                android:textColor="@color/WHITE"
+                android:text="Insert Manually"
+                android:id="@+id/insert_manually_btn" />
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/clost_img_btn"
+        android:src="@mipmap/cross_sign"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dvn.vindecoder.ui.ChooseSignUp">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        layout="@layout/layout_toolbar1"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select profile to signup"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:textColor="@color/BLACK"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/user"
+        android:drawableTint="@color/back_dark_blue"
+        android:drawablePadding="5sp"
+        android:id="@+id/txt_header"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header"
+        />
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/data_layout"
+           android:orientation="vertical"
+           android:layout_marginTop="20sp"
+
+           android:layout_below="@+id/txt_header"
+           >
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="3"
+
+               android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="100sp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:layout_margin="5sp"
+                   android:id="@+id/buyer_btn"
+                   android:paddingLeft="5sp"
+                   android:paddingRight="5sp"
+                   android:paddingBottom="15sp"
+                   android:paddingTop="15sp"
+                   android:background="@color/back_dark_blue"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:id="@+id/imageView8"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/icon_buyer" />
+
+                   <TextView
+                       android:id="@+id/textView2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:text="Buyer"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:textColor="@color/WHITE" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/transporter_btn"
+                   android:layout_width="100sp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:paddingLeft="5sp"
+                   android:paddingRight="5sp"
+                   android:paddingBottom="15sp"
+                   android:paddingTop="15sp"
+                   android:gravity="center"
+                   android:layout_margin="5sp"
+                   android:background="@color/back_dark_blue"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:src="@mipmap/icon_transport" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:text="Transporter"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:textColor="@color/WHITE" />
+               </LinearLayout>
+
+               <LinearLayout      android:layout_width="100sp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:id="@+id/vender_btn"
+                   android:paddingLeft="5sp"
+                   android:paddingRight="5sp"
+                   android:paddingBottom="15sp"
+                   android:paddingTop="15sp"
+                   android:layout_margin="5sp"
+                   android:background="@color/back_dark_blue"
+                   android:gravity="center"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/icon_vender"
+                    />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:text="Vendor"
+                       android:gravity="center"
+                       android:textColor="@color/WHITE"
+                       />
+
+               </LinearLayout>
+           </TableRow>
+
+
+
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="3"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+
+               <LinearLayout
+                   android:layout_width="100sp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:layout_margin="5sp"
+                   android:padding="5sp"
+                   android:background="@color/back_dark_blue"
+                   android:id="@+id/ri_facility_btn"
+                   android:orientation="vertical">
+
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/icone_ri" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:text="RI Facility"
+                       android:gravity="center"
+                       android:textColor="@color/WHITE"
+                       />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/seller_info_btn"
+                   android:layout_width="100sp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:padding="5sp"
+                   android:layout_margin="5sp"
+                   android:background="@color/back_dark_blue"
+                   android:orientation="vertical">
+
+                   <ImageView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/icone_vehicle" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:text="Seller Input Vehicle Info"
+
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:textColor="@color/WHITE" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="100sp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:layout_margin="5sp"
+                   android:padding="5sp"
+
+                   android:orientation="vertical">
+
+
+
+               </LinearLayout>
+
+           </TableRow>
+
+
+
+
+
+
+
+       </TableLayout>
+
+</RelativeLayout>

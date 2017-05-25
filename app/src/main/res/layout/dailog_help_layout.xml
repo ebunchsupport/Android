@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dailog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20sp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/clost_img_btn"
+            android:layout_centerHorizontal="true">
+        <TextView
+            android:padding="10sp"
+            android:id="@+id/edit_vin_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:text="@string/text_help"/>
+
+            <TextView
+                android:padding="12sp"
+                android:id="@+id/text_btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/back_dark_blue"
+                android:alpha=".3"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="OK"/>
+        </LinearLayout>
+    <TextView
+        android:padding="10sp"
+        android:id="@+id/text_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Help?"/>
+
+</RelativeLayout>

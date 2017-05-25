@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/title_addby"
+        android:title="ADD BY"
+        >
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/year_make_model"
+                    android:icon="@mipmap/icon_calender"
+                    android:title="Year Make Model" />
+                </group>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/vin_scanner"
+                    android:icon="@mipmap/icon_barcode"
+                    android:title="Vin Scanner" />
+                </group>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/vin_keyboard"
+                    android:icon="@mipmap/icon_keybord"
+                    android:title="Vin Scanner" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="QUICK LINKS"
+        android:id="@+id/title_quick_links"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/add_user"
+                android:textColor="@color/WHITE"
+                android:icon="@mipmap/icon_adduser"
+                android:title="Add User" />
+            <item
+                android:id="@+id/add_un_assigned_car"
+                android:textColor="@color/WHITE"
+                android:icon="@mipmap/icon_assign_car"
+                android:title="Assign car to user" />
+            <item
+                android:id="@+id/user"
+                android:icon="@mipmap/icon_adduser"
+                android:title="Users Detail"
+
+                />
+            <item
+                android:id="@+id/share_fb_item"
+                android:icon="@mipmap/icon_share"
+                android:title="Share Details on FB" />
+</group>
+        </menu>
+    </item>
+
+
+
+</menu>
